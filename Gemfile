@@ -34,9 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # Use React inside of Rails
 gem 'react-rails'
 
-# Use Bourbon for styling
-gem 'bourbon'
-gem 'refills'
+# Use Bulma for styling
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
