@@ -8,6 +8,10 @@ class PostingsController < ApplicationController
     @posting = Posting.find(params[:id])
   end
 
+  def new
+    
+  end
+
   private
 
   def posting_params
