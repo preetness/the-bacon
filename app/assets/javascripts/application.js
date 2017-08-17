@@ -13,6 +13,5 @@
 //= require rails-ujs
 //= require react
 //= require react_ujs
-//= require semantic-ui
 //= require components
 //= require_tree .
