@@ -13,6 +13,24 @@
  *= require_self
  */
 
+.main-header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 55px;
+}
+
 a {
   text-decoration: none;
+}
+
+.grid-demo-col {
+  max-width: 250px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 10px;
+  height: 280px;
+}
+
+.nav-logo {
+  font-size: 30px !important;
+  font-weight: 600;
 }

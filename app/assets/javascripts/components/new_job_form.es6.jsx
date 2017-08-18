@@ -16,6 +16,7 @@ class NewJobForm extends React.Component {
           <option value='temporary'>Temporary</option>
           <option value='internship'>Internship</option>
         </select>
+        <input type='submit' value='Post New Job' />
       </div>
     );
   }

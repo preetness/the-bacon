@@ -1,17 +1,18 @@
 function JobPostingList (props) {
 
-    return (
-      <div>
-        {props.postings.map(function(posting) {
+  return (
+       <div className='cards row'>
+         {props.postings.map(function(posting) {
           return (
-            <a href={'postings/' + posting.id}>
-              <strong>Job Title: </strong>
-              {posting.title}<br />
-              <strong>Company: </strong>
-              {posting.company}<br />
-            </a>
-          )
+            <div className='card grid-demo-col'>
+               <h5 className='card-header text-center'>{posting.title}</h5>
+               <p className='card-body text-center'>{posting.company}</p>
+               <div className='card-footer center text-center'>
+                 <a href={'postings/' + posting.id}>Details</a>
+               </div>
+            </div>
+           )
         })}
-      </div>
-   );
+     </div>
+   )
 }
