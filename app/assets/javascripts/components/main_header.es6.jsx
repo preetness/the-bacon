@@ -7,7 +7,7 @@ class MainHeader extends React.Component {
     }
     return (
       <div>
-        <h2 className='main-header-title' style={style}>Jobs Currently Available:</h2>
+        <h2 className='header-title' style={style}>Jobs Currently Available:</h2>
       </div>
     )
   }

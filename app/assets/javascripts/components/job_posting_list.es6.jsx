@@ -8,7 +8,7 @@ function JobPostingList (props) {
                <h5 className='card-header text-center'>{posting.title}</h5>
                <p className='card-body text-center'>{posting.company}</p>
                <div className='card-footer center text-center'>
-                 <a href={'postings/' + posting.id}>Details</a>
+                 <a className='job-details' href={'postings/' + posting.id}>Details</a>
                </div>
             </div>
            )

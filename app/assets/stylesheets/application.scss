@@ -13,9 +13,29 @@
  *= require_self
  */
 
-.main-header-title {
+ body {
+  width: 90%;
+  height:960px;
+  background-image:url('wood');
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  background-attachment: fixed;
+}
+
+.header-title {
   font-family: 'Playfair Display', serif;
   font-size: 55px;
+}
+
+.landing-page-title {
+  margin-top: 15%;
+  font-family: 'Playfair Display', serif;
+  font-size: 65px;
+  text-align: center;
 }
 
 a {
@@ -24,13 +44,37 @@ a {
 
 .grid-demo-col {
   max-width: 250px;
-  border: 1px solid black;
+  border: 2px solid white;
   padding: 10px;
   margin: 10px 10px;
   height: 280px;
+  box-shadow: 10px 5px 5px black;
 }
 
 .nav-logo {
-  font-size: 30px !important;
+  font-size: 35px !important;
   font-weight: 600;
+  color: orange;
+  letter-spacing: -2px;
+}
+
+.nav-item {
+  color: white;
+}
+
+button {
+  margin-left: 30px !important;
+}
+
+.card .card-header {
+  color: white !important;
+  font-family: 'Playfair Display', serif;
+}
+
+.job-details {
+  color: orange;
+}
+
+.job-show {
+  margin-top: 20%;
 }
