@@ -1,28 +1,18 @@
 function JobPostingList (props) {
 
-    const style = {
-        display: 'inline-block',
-        border: '1px solid black',
-        height: '200px',
-        width: '200px',
-        marginRight: '25px',
-        verticalAlign: 'top',
-        textAlign: 'center',
-        fontSize: '15px'
-    }
-
-    return (
-      <div>
-      {props.postings.map(function(posting) {
-        return (
-          <a href={'postings/' + posting.id} className='jobs' style={style}>
-            <strong>Job Title: </strong>
-            {posting.title}<br />
-            <strong>Company: </strong>
-            {posting.company}
-          </a>
-        )
-      })}
-      </div>
-  );
+  return (
+       <div className='cards row'>
+         {props.postings.map(function(posting) {
+          return (
+            <div className='card grid-demo-col'>
+               <h5 className='card-header text-center'>{posting.title}</h5>
+               <p className='card-body text-center'>{posting.company}</p>
+               <div className='card-footer center text-center'>
+                 <a className='job-details' href={'postings/' + posting.id}>Details</a>
+               </div>
+            </div>
+           )
+        })}
+     </div>
+   )
 }
