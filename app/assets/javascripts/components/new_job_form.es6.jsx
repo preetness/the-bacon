@@ -14,7 +14,7 @@ class NewJobForm extends React.Component {
     return (
       <div>
         <h2 className='header-title'>Add a New Job Posting</h2>
-        <form onSubmit={this.handleSubmit}>
+        <form action='/postings' method='POST'>
           <label>Job Title</label>
           <input type='text' name='posting[title]' placeholder='Sr. Software Developer' />
           <label>Job Description</label>
