@@ -17,11 +17,22 @@ class PostingsController < ApplicationController
   def create
     @posting = Posting.new(posting_params)
     if @posting.save
-      redirect_to root_path, :flash => { :success => 'Your job was posted!' }
+      flash[:success] = 'You successfully added a new job posting.'
+      redirect_to root_path
     else
-      render 'new'
+      render :new
     end
   end
+
+  def update
+  @posting = Posting.find(params[:id])
+  if @posting.update_attributes(event_params)
+    flash[:success] = 'You updated your job posting.'
+    redirect_to root_path
+  else
+    render :edit
+  end
+end
 
   private
 
