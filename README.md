@@ -18,3 +18,4 @@ Start your Rails server:
 
 Go to `localhost:3000` in your favorite browser!
 
+Or visit https://i-love-the-bacon.herokuapp.com/
